@@ -20,14 +20,27 @@ public class Pokemon0 {
 		this.atk = (this.niveau / 2 ) + 1 ; 
 	}
 	
-	//Méthodes 
-	
-	//rajouter les getters
-	
+	//Méthodes 	
 	private String prefixe() {
 		return "[Pokemon "+this.nom+"] : "; 
 	}
 	
+	public String getNom() {
+		return nom;
+	}
+
+	public int getNiveau() {
+		return niveau;
+	}
+
+	public int getHp() {
+		return hp;
+	}
+
+	public int getAtk() {
+		return atk;
+	}
+
 	public boolean isKo () {
 		return this.hp==0 ; 
 	}
@@ -37,7 +50,7 @@ public class Pokemon0 {
 	}
 	
 	public void attaquer (Pokemon0 p) {
-		log("J'attaque" + p.nom);
+		log("J'attaque " + p.nom);
 		p.hp -= this.atk ; 
 		
 	}
@@ -45,8 +58,8 @@ public class Pokemon0 {
 	public String toString() {
 		return "Je m'apelle "
 				+this.nom + "\n"+ " je suis au niveau "
-				+ this.niveau + "j'ai  "
-				+this.hp+ "points de vie" + "mon attaque de base est de "
+				+ this.niveau + " j'ai  "
+				+this.hp+ " points de vie " + " mon attaque de base est de "
 				+this.atk; 
 	}
 	
