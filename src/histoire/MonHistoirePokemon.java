@@ -29,12 +29,6 @@ public class MonHistoirePokemon {
 		
 		eau.log(eau.toString());
 		feu.log(feu.toString());
-		
-		
-		
-		
-		
-
 	}
 
 }
